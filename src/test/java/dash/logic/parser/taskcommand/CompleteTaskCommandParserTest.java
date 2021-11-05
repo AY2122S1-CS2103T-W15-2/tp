@@ -1,11 +1,11 @@
 package dash.logic.parser.taskcommand;
 
+import org.junit.jupiter.api.Test;
+
 import dash.commons.core.Messages;
 import dash.logic.commands.taskcommand.CompleteTaskCommand;
 import dash.logic.parser.CommandParserTestUtil;
 import dash.testutil.TypicalIndexes;
-
-import org.junit.jupiter.api.Test;
 
 class CompleteTaskCommandParserTest {
     private CompleteTaskCommandParser parser = new CompleteTaskCommandParser();
