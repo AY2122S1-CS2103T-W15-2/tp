@@ -3,6 +3,7 @@ package dash.logic.commands;
 import static dash.logic.parser.CliSyntax.PREFIX_ADDRESS;
 import static dash.logic.parser.CliSyntax.PREFIX_EMAIL;
 import static dash.logic.parser.CliSyntax.PREFIX_NAME;
+import static dash.logic.parser.CliSyntax.PREFIX_PERSON;
 import static dash.logic.parser.CliSyntax.PREFIX_PHONE;
 import static dash.logic.parser.CliSyntax.PREFIX_TAG;
 import static dash.logic.parser.CliSyntax.PREFIX_TASK_DESCRIPTION;
@@ -60,6 +61,8 @@ public class CommandTestUtil {
     public static final String VALID_TASK_DATE_LECTURE = "21/10/2021";
     public static final String VALID_TASK_DATE_PR_REVIEW = "21/02/2021, 10:00 PM";
 
+    public static final String VALID_TASK_ASSIGNEE = "1";
+
     public static final String NAME_DESC_AMY = " " + PREFIX_NAME + VALID_NAME_AMY;
     public static final String NAME_DESC_BOB = " " + PREFIX_NAME + VALID_NAME_BOB;
     public static final String PHONE_DESC_AMY = " " + PREFIX_PHONE + VALID_PHONE_AMY;
@@ -76,6 +79,8 @@ public class CommandTestUtil {
     public static final String TAG_DESC_GROUPWORK = " " + PREFIX_TAG + VALID_TAG_GROUPWORK;
     public static final String TAG_DESC_HOMEWORK = " " + PREFIX_TAG + VALID_TAG_HOMEWORK;
 
+    public static final String PERSON_ONE = " " + PREFIX_PERSON + VALID_TASK_ASSIGNEE;
+
     public static final String TASK_DESC_ASSIGNMENT = " " + PREFIX_TASK_DESCRIPTION + VALID_TASK_DESCRIPTION_ASSIGNMENT;
     public static final String TASK_DESC_LECTURE = " " + PREFIX_TASK_DESCRIPTION + VALID_TASK_DESCRIPTION_LECTURE;
     public static final String TASK_DESC_PR_REVIEW = " " + PREFIX_TASK_DESCRIPTION + VALID_TASK_DESCRIPTION_PR_REVIEW;
@@ -87,6 +92,7 @@ public class CommandTestUtil {
     public static final String INVALID_ADDRESS_DESC = " " + PREFIX_ADDRESS; // empty string not allowed for addresses
     public static final String INVALID_TAG_DESC = " " + PREFIX_TAG + "hubby*"; // '*' not allowed in tags
     public static final String INVALID_TASK_DESC = " " + PREFIX_TASK_DESCRIPTION + " "; // whitespace not allowed
+    public static final String INVALID_TASK_PERSON = " " + PREFIX_PERSON + "Alex"; //Indexes used, not strings
 
     public static final String PREAMBLE_WHITESPACE = "\t  \r  \n";
     public static final String PREAMBLE_NON_EMPTY = "NonEmptyPreamble";
